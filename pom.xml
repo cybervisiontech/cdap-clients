@@ -61,7 +61,7 @@
   </modules>
 
   <properties>
-    <cdap.version>2.5.0-SNAPSHOT</cdap.version>
+    <cdap.version>2.5.0</cdap.version>
     <commons.lang.version>2.5</commons.lang.version>
     <logback.version>1.0.9</logback.version>
     <log4j.over.slf4j.version>1.7.7</log4j.over.slf4j.version>
