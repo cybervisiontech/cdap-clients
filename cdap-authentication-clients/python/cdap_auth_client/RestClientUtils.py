@@ -41,7 +41,7 @@ class RestClientUtils:
     def check_status(status):
         raise {
             hl.NOT_FOUND: RestClientUtils.raise_not_found_error(status),
-            hl.BAD_REQUEST: RestClientUtils.raise_base_request_eror(status),
+            hl.BAD_REQUEST: RestClientUtils.raise_base_request_error(status),
             hl.CONFLICT: RestClientUtils.raise_conflict_error(status),
             hl.UNAUTHORIZED: RestClientUtils.raise_unauthorized_error(status),
             hl.FORBIDDEN: RestClientUtils.raise_forbidden_error(status),
@@ -56,7 +56,7 @@ class RestClientUtils:
                                      u' was received from gateway server.')
 
     @staticmethod
-    def raise_base_request_eror(status):
+    def raise_base_request_error(status):
         return BadRequestError(status, u'Bad request HTTP code '
                                        u'was received from gateway server.')
 

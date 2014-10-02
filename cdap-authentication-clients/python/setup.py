@@ -18,11 +18,11 @@ from setuptools import setup
 from setuptools import find_packages
 
 setup(name='cdap-auth-client',
-    version='${project.version}',
-    description='Authentication client for Cask Data Application Platform',
-    author='Cask Data',
-    author_email='cask-dev@googlegroups.com',
-    install_requires=["six"],
-    packages=find_packages(),
-    )
+      version='${project.version}',
+      description='Authentication client for Cask Data Application Platform',
+      author='Cask Data',
+      author_email='cask-dev@googlegroups.com',
+      install_requires=["six", 'requests'],
+      packages=find_packages(),
+      )
 

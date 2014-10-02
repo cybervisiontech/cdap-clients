@@ -44,7 +44,7 @@ class AuthenticationHandler(brh):
     def auth_port(self):
         return self.AUTH_PORT
 
-    @auth_host.setter
+    @auth_port.setter
     def auth_port(self, auth_port):
         self.AUTH_PORT = auth_port
 
