@@ -36,19 +36,6 @@
     <module>java</module>
   </modules>
 
-  <properties>
-    <cdap.version>2.5.0-SNAPSHOT</cdap.version>
-    <commons.lang.version>2.5</commons.lang.version>
-    <logback.version>1.0.9</logback.version>
-    <log4j.over.slf4j.version>1.7.7</log4j.over.slf4j.version>
-    <gson.version>2.2.4</gson.version>
-    <guava.version>13.0.1</guava.version>
-    <rs-api.version>2.0</rs-api.version>
-    <jersey.version>2.4.1</jersey.version>
-    <mockito.version>1.9.5</mockito.version>
-    <junit.version>4.11</junit.version>
-  </properties>
-
   <build>
     <pluginManagement>
       <plugins>
