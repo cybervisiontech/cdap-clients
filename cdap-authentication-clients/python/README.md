@@ -84,6 +84,14 @@ external Python applications.
  token = authentication_client.get_access_token()
  ```
 
+ ## Tests
+ 
+ To run tests from the commandline:
+ 
+ ```
+ python -m tests.BasicAuthenticationClientTest
+ ```
+
 
 
  
