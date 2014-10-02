@@ -20,15 +20,6 @@ except ImportError:
 
 import socket
 import threading
-import os
-import sys
-import inspect
-
-current_dir = os.path.dirname(
-    os.path.abspath(inspect.getfile(inspect.currentframe())))
-parent_dir = os.path.dirname(current_dir)
-src_dir = parent_dir + '/cdap_auth_client'
-sys.path.insert(0, src_dir)
 
 from AuthDisabledHandler import AuthDisabledHandler
 from EmptyUrlListHandler import EmptyUrlListHandler
@@ -38,8 +29,8 @@ try:
 except ImportError:
     import unittest as unittest
 
-from Config import Config
-from BasicAuthenticationClient import BasicAuthenticationClient
+from cdap_auth_client import Config
+from cdap_auth_client import BasicAuthenticationClient
 from AuthHandler import AuthenticationHandler
 import TestConstants
 
